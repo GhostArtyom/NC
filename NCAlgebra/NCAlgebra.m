@@ -15,7 +15,7 @@ BeginPackage["NCAlgebra`",
 ];
 
 NCAlgebra::SmallCapSymbolsNonCommutative = "All lower cap single letter symbols (e.g. a,b,c,...) were set as noncommutative.";
-NCAlgebra::NoSymbolsNonCommutative = "No symbols were set as noncommutative. Use SetNonCommutative to set noncommutative symbols.";
+NCAlgebra::NoSymbolsNonCommutative = "No symbols were set as noncommutative. Use SetNonCommutative (SNC) to set noncommutative symbols.";
 
 Begin["`Private`"];
 
@@ -37,8 +37,8 @@ Begin["`Private`"];
 			    Global`u, Global`v, Global`w, Global`x, Global`y,
 			    Global`z];
       Message[NCAlgebra::SmallCapSymbolsNonCommutative];
-     ,
-      Message[NCAlgebra::NoSymbolsNonCommutative];
+     (* ,
+      Message[NCAlgebra::NoSymbolsNonCommutative]; *)
   ];
 
 End[];

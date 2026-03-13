@@ -17,7 +17,7 @@ Begin["`Private`"];
   If[ $NC$Dir =!= {}
      ,
       (* Setup Path *)
-      Message[NC::Directory, $NC$Dir];
+      (* Message[NC::Directory, $NC$Dir]; *)
 
       (* Setting NCAlgebra Path *)
       AppendTo[$Path, $NC$Dir];
